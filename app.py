@@ -326,7 +326,7 @@ def infer(input_path: str, resize_image: bool, n_frames: int, n_steps: int, seed
     fps_id=6,
     motion_bucket_id=127,
     cond_aug=0.02,
-    seed=23,
+    seed=seed,
     decoding_t=decoding_t,  # Number of frames decoded at a time! This eats most VRAM. Reduce if necessary.
     device=device,
   )
